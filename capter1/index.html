@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add & Wishlist product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      
+
+  <button class="btn" onclick="cartQuantity++; document.querySelector('#cartSummary').innerHTML = `Your Bag has items: ${cartQuantity} items`;">Add to Bag</button>
+
+
+  <button class="btn1"  onclick="cartQuantity--; document.querySelector('#cartSummary').innerHTML = `Your Bag has items: ${cartQuantity} items`;">Move to Wishlist</button>
+
+
+  <button class="btn" onclick="cartQuantity+=2; document.querySelector('#cartSummary').innerHTML = `Your Bag has items: ${cartQuantity} items`;">Add 1+1 sale item</button>
+
+  <h1 id="cartSummary"></h1>
+
+
+  <script>
+    let cartQuantity = 0;
+    document.querySelector('#cartSummary').innerHTML = `Your Bag has items: ${cartQuantity} items`;
+  </script>
+</body>
+</html>
