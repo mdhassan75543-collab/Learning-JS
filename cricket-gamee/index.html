@@ -8,12 +8,24 @@
   <h1 id="h1">Bat Ball and Stump Game </h1>
   
   <button id="btn" onclick=" 
-  
-  
-  
-  
-  
-  ">BAT</button>
+
+    console.log('You have choosen bat');
+
+    let randomNumber = Math.random() * 3
+
+    if (randomNumber <=1) { 
+      let computerChoice = 'bat';
+      console.log('computer choice is bat');
+
+} else if (randomNumber <=2) {
+      let computerChoice = 'ball';
+      console.log('computer choice is ball');
+
+    } else {
+      let computerChoice = 'stump';
+      console.log('computer choice is stump');
+    }
+    ">BAT</button>
 
 
   <button id="btn">BALL</button>
